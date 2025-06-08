@@ -13,39 +13,42 @@
     <!-- Main -->
     <main>
         
-        <!-- Function 1: Ongoing Activities -->
-        <section id="Activities">
-            <h2 class="mb-4 text-center">Ongoing Activities</h2>
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center">
-                    <figure>
-                        <img class="toggle-image img-thumbnail" 
-                             data-large="images/Chess_setup.jpg"
-                             src="images/Elderly_Chess.jpg" 
-                             alt="Chess" title="Click to enlarge">
-                        <figcaption class="text-muted"><em>Chess</em></figcaption>
-                    </figure>
-                    <h3>Chess</h3>
-                </div>
+<!-- Function 1: Ongoing Activities -->
+<section id="Activities">
+    <h2 class="mb-4 text-center">Ongoing Activities</h2>
+    <div class="row align-items-center">
+        <!-- Chess -->
+        <div class="col-md-6 text-center">
+            <figure>
+                <img class="toggle-image activity-img img-thumbnail"
+                     data-large="images/Chess_setup.jpg"
+                     src="images/Elderly_Chess.jpg"
+                     alt="Chess" title="Click to enlarge">
+                <figcaption class="text-muted"><em>Elderly playing Chess</em></figcaption>
+            </figure>
+            <h3>Chess</h3>
+        </div>
 
-                <div class="col-md-6 text-center">
-                    <figure>
-                        <img class="toggle-image img-thumbnail" 
-                             data-large="images/Mj_setup.jpg"
-                             src="images/Elderly_Mahjong.jpg" 
-                             alt="Mahjong" title="Click to Check Registration">
-                        <figcaption class="text-muted"><em>Elderly playing Mahjong</em></figcaption>
-                    </figure>
-                    <h3>Mahjong</h3>
-                </div>
-            </div>
+        <!-- Mahjong -->
+        <div class="col-md-6 text-center">
+            <figure>
+                <img class="toggle-image activity-img img-thumbnail"
+                     data-large="images/Mj_setup.jpg"
+                     src="images/Elderly_Mahjong.jpg"
+                     alt="Mahjong" title="Click to Check Registration">
+                <figcaption class="text-muted"><em>Elderly playing Mahjong</em></figcaption>
+            </figure>
+            <h3>Mahjong</h3>
+        </div>
+    </div>
 
-            <div class="text-center">
-                <button class="btn btn-primary mt-4" onclick="location.href='activity_register.php'">
-                    Register for Activity
-                </button>
-            </div>
-        </section>
+    <div class="text-center">
+        <button class="btn btn-primary mt-4" onclick="location.href='activity_register.php'">
+            Register for Activity
+        </button>
+    </div>
+</section>
+
 
         <!-- Location -->
         <section id="Location">
@@ -60,7 +63,7 @@
         </section>
 
         <!-- User Name List -->
-<section>
+<section >
     <div class="container">
         <h2 class="text-3xl font-bold text-center text-black mb-4 uppercase">Community Status</h2>
         <div class="bg-gray-900 rounded-lg shadow-lg overflow-x-auto">
@@ -81,6 +84,18 @@
         </div>
     </div>
 </section>
+        <!-- GoGoBot -->
+<section id="GoGoBot">
+    <div class="container text-center">
+        <h2 class="text-3xl font-bold text-black mb-4 uppercase">GoGoBot</h2>
+
+        <figure>
+            <img src="images\GoGoBot.png" alt="GoGoBot" class="gogobot-image img-thumbnail">
+            <figcaption class="text-muted mt-2"><em>Your friendly community assistant</em></figcaption>
+        </figure>
+    </div>
+</section>
+
 
         
     </main>

@@ -11,6 +11,8 @@
                 <li class="nav-item"><a class="nav-link" href="index.php#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#Activities">Activities</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#Location">Location</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php#community-body">Community Status</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php#GoGoBot">GoGoBot</a></li>
                 <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
                 <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
             </ul>
