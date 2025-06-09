@@ -53,13 +53,50 @@
         <!-- Location -->
         <section id="Location">
             <h2 class="mb-4 text-center">Location</h2>
+            <div>
             <figure class="text-center">
                 <img class="toggle-image img-thumbnail" 
-                     data-large="images/SG_Map.jpg"
                      src="images/SG_Map.jpg" 
                      alt="SG Region" title="Click to enlarge">
                 <figcaption class="text-muted"><em>SG Region</em></figcaption>
             </figure>
+            </div>
+            <div id="region-popup" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+                <img id="region-image" class="max-w-[60%] max-h-[60%] border-4 border-white rounded-xl shadow-xl" src="" alt="Region Map">
+            </div>
+            <div class="text-center py-4">
+                <button class="region-btn" data-region="north">North</button>
+                <button class="region-btn" data-region="east">East</button>
+                <button class="region-btn" data-region="west">West</button>
+                <button class="region-btn" data-region="central">Central</button>
+            </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const regionButtons = document.querySelectorAll(".region-btn");
+            const popup = document.getElementById("region-popup");
+            const popupImage = document.getElementById("region-image");
+
+            const regionImagePaths = {
+                north: "images/north.jpg",
+                east: "images/east.jpg",
+                west: "images/west.jpg",
+                central: "images/central.jpg"
+            };
+
+            regionButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                const region = button.getAttribute("data-region");
+                popupImage.src = regionImagePaths[region];
+                popup.classList.remove("hidden");
+                });
+            });
+
+            popup.addEventListener("click", () => {
+                popup.classList.add("hidden");
+                popupImage.src = "";
+            });
+            });
+        </script>
         </section>
 
         <!-- User Name List -->
@@ -77,7 +114,7 @@
                         <th class="py-4 px-6 glow-red-border">Last Seen</th>
                     </tr>
                 </thead>
-                <tbody id="community-body">
+                 <tbody id="community-body" class="bg-zinc-900 text-white">
                     <!-- JS will populate this -->
                 </tbody>
             </table>
