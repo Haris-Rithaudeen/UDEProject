@@ -62,9 +62,10 @@
             </figure>
             </div>
             <div id="region-popup" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-                <img id="region-image" class="max-w-[60%] max-h-[60%] border-4 border-white rounded-xl shadow-xl" src="" alt="Region Map">
+                <img id="region-image" class="max-w-[60%] max-h-[60%] border-4 border-white rounded-xl shadow-xl" src="images\General_map.png" alt="Region Map">
             </div>
             <div class="text-center py-4">
+                <button class="region-btn" data-region="general">General</button>
                 <button class="region-btn" data-region="north">North</button>
                 <button class="region-btn" data-region="east">East</button>
                 <button class="region-btn" data-region="west">West</button>
@@ -77,10 +78,11 @@
             const popupImage = document.getElementById("region-image");
 
             const regionImagePaths = {
-                north: "images/north.jpg",
-                east: "images/east.jpg",
-                west: "images/west.jpg",
-                central: "images/central.jpg"
+                general: "images/General_map.png",
+                north: "images/North.jpg",
+                east: "images/East.jpg",
+                west: "images/West.jpg",
+                central: "images/Central.jpg"
             };
 
             regionButtons.forEach(button => {

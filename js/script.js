@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // 👇 Community status rotation logic starts here
+    // Community status rotation logic starts here
     const users = [
         { id: "01", name: "Mary", area: "North", status: "Online", lastSeen: "1d 1h 40m" },
         { id: "02", name: "John", area: "East", status: "Online", lastSeen: "2h 30m" },
@@ -75,7 +75,10 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "07", name: "Tom", area: "East", status: "Online", lastSeen: "4h 10m" },
         { id: "08", name: "Jane", area: "Central", status: "Online", lastSeen: "2d 3h" },
         { id: "09", name: "Mark", area: "West", status: "Online", lastSeen: "1h 15m" },
-        { id: "10", name: "Aisha", area: "NorthEast", status: "Online", lastSeen: "45m" }
+        { id: "10", name: "Aisha", area: "NorthEast", status: "Online", lastSeen: "45m" },
+        { id: "11", name: "Samuel", area: "NorthEast", status: "Offline", lastSeen: "7d 23h 59m" }
+
+
     ];
 
     let startIndex = 0;
@@ -102,6 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     updateCommunityTable();
-    setInterval(updateCommunityTable, 5000);
+    setInterval(updateCommunityTable, 2000);
 });
 
