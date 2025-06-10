@@ -14,62 +14,70 @@
     <main>
         
 <!-- Function 1: Ongoing Activities -->
-<section id="Activities">
-    <h2 class="mb-4 text-center">Ongoing Activities</h2>
-    <div class="row align-items-center">
-        <!-- Chess -->
-        <div class="col-md-6 text-center">
-            <figure>
-                <img class="toggle-image activity-img img-thumbnail"
-                     data-large="images/Chess_setup.jpg"
-                     src="images/Elderly_Chess.jpg"
-                     alt="Chess" title="Click to enlarge">
-                <figcaption class="text-muted"><em>Elderly playing Chess</em></figcaption>
-            </figure>
-            <h3>Chess</h3>
+    <section id="Activities">
+        <h2 class="mb-4 text-center">Ongoing Activities</h2>
+        <div class="row align-items-center">
+            <!-- Chess -->
+            <div class="col-md-6 text-center">
+                <figure>
+                    <img class="toggle-image activity-img img-thumbnail"
+                        data-large="images/Chess_setup.jpg"
+                        src="images/Elderly_Chess.jpg"
+                        alt="Chess" title="Click to enlarge">
+                    <figcaption class="text-muted"><em>Elderly playing Chess</em></figcaption>
+                </figure>
+                <h3>Chess</h3>
+            </div>
+
+            <!-- Mahjong -->
+            <div class="col-md-6 text-center">
+                <figure>
+                    <img class="toggle-image activity-img img-thumbnail"
+                        data-large="images/Mj_setup.jpg"
+                        src="images/Elderly_Mahjong.jpg"
+                        alt="Mahjong" title="Click to Check Registration">
+                    <figcaption class="text-muted"><em>Elderly playing Mahjong</em></figcaption>
+                </figure>
+                <h3>Mahjong</h3>
+            </div>
         </div>
 
-        <!-- Mahjong -->
-        <div class="col-md-6 text-center">
-            <figure>
-                <img class="toggle-image activity-img img-thumbnail"
-                     data-large="images/Mj_setup.jpg"
-                     src="images/Elderly_Mahjong.jpg"
-                     alt="Mahjong" title="Click to Check Registration">
-                <figcaption class="text-muted"><em>Elderly playing Mahjong</em></figcaption>
-            </figure>
-            <h3>Mahjong</h3>
+        <div class="text-center">
+            <button class="btn btn-primary mt-4" onclick="location.href='activity_register.php'">
+                Register for Activity
+            </button>
         </div>
-    </div>
-
-    <div class="text-center">
-        <button class="btn btn-primary mt-4" onclick="location.href='activity_register.php'">
-            Register for Activity
-        </button>
-    </div>
-</section>
+    </section>
 
 
         <!-- Location -->
         <section id="Location">
             <h2 class="mb-4 text-center">Location</h2>
-            <div>
-            <figure class="text-center">
-                <img class="toggle-image img-thumbnail" 
-                     src="images/SG_Map.jpg" 
-                     alt="SG Region" title="Click to enlarge">
-                <figcaption class="text-muted"><em>SG Region</em></figcaption>
-            </figure>
-            </div>
-            <div id="region-popup" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-                <img id="region-image" class="max-w-[60%] max-h-[60%] border-4 border-white rounded-xl shadow-xl" src="images\General_map.png" alt="Region Map">
-            </div>
-            <div class="text-center py-4">
-                <button class="region-btn" data-region="general">General</button>
-                <button class="region-btn" data-region="north">North</button>
-                <button class="region-btn" data-region="east">East</button>
-                <button class="region-btn" data-region="west">West</button>
-                <button class="region-btn" data-region="central">Central</button>
+            <div class="row align-items-center">    
+                <div>
+                    <figure class="text-center">
+                        <img class="toggle-image img-thumbnail" 
+                            src="images/SG_Map.jpg" 
+                            alt="SG Region" title="Click to enlarge">
+                        <figcaption class="text-muted"><em>SG Region</em></figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <div id="region-popup" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+                    <figure class="text-center">
+                        <img id="region-image" width="700" height="400" class="max-w-[60%] max-h-[60%] border-4 border-white rounded-xl shadow-xl" 
+                        src="images/General.jpg" alt="Region Map">
+                    </figure>
+                    </div>
+                </div>
+            
+                <div class="text-center py-4">
+                        <button class="region-btn" data-region="general">General</button>
+                        <button class="region-btn" data-region="north">North</button>
+                        <button class="region-btn" data-region="east">East</button>
+                        <button class="region-btn" data-region="west">West</button>
+                        <button class="region-btn" data-region="central">Central</button>
+                </div>
             </div>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -78,7 +86,7 @@
             const popupImage = document.getElementById("region-image");
 
             const regionImagePaths = {
-                general: "images/General_map.png",
+                general: "images/General.jpg",
                 north: "images/North.jpg",
                 east: "images/East.jpg",
                 west: "images/West.jpg",
